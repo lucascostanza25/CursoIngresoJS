@@ -8,3 +8,4 @@ function mostrar()
 	alert("¡Hola "+nombre+"!");
 }
 
+//Terminado
