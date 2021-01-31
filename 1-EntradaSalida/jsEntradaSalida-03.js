@@ -14,4 +14,4 @@ function mostrar()
 	nombreIngresado=txtIdNombre.value;
 	alert("¡Hola "+nombreIngresado+"!"); */
 
-	//Terminado
+//Terminado
