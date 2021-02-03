@@ -10,13 +10,15 @@ function mostrarAumento()
 	let sueldo;
 	let resultado;
 	let aumento;
-
+	//Recoger valor del sueldo de la caja de texto
 	sueldo=document.getElementById('txtIdSueldo').value;
 	sueldo=parseInt(sueldo);
-	
+	//Aumentar el sueldo un 10%
 	aumento=sueldo*10/100;
-	
+	//Sumer el sueldo base con el aumento
 	resultado=sueldo+aumento;
-	
+	//Imprimir el resultado del sueldo aumentado en el cuadro de texto resultado
 	document.getElementById('txtIdResultado').value=resultado;
 }
+
+//Terminado
