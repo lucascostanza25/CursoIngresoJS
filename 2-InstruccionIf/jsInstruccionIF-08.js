@@ -1,8 +1,18 @@
+/*
+Costanza Lucas
+Ejercicio IF 8*/
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
-	
+	let edad;
+	let estado;
+	const MAYOR_EDAD=18;
 
+	edad=parseInt(document.getElementById('txtIdEdad').value);
+	estado=document.getElementById('estadoCivil').value;
 
-}//FIN DE LA FUNCIÓN
+	if(edad>=MAYOR_EDAD&&estado==("Soltero"))
+	{
+		alert("Es soltero y no es menor.");
+	}
+
+}

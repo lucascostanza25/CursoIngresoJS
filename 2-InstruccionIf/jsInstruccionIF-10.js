@@ -1,6 +1,28 @@
+/*
+Costanza Lucas
+Ejercicio IF 10
+*/
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");
+	let nota;
+	let mensaje;
 
-}//FIN DE LA FUNCIÓN
+	nota=Math.floor(Math.random() * 10) + 1;
+
+	if(nota>8)
+	{
+		mensaje= "excelente";
+	}
+	else
+	{
+		if(nota>3)
+		{
+			mensaje= "aprobado";
+		}
+		else
+		{
+			mensaje= "desaprobado";
+		}
+	}
+	alert("Tu nota es "+ nota + ", " + mensaje);
+}

@@ -12,15 +12,50 @@ var contadorIntentos;
 
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
-	 
-		//alert(numeroSecreto );
-	
-
+  numeroSecreto=Math.round(Math.random() * 100) + 1;
+  //numeroFaltante=numeroSecreto-numeroIngresado;
+  alert("¡Comienza el juego!")
 }
 
 function verificar()
 {
-	
-	
+  let numeroIngresado;
+  let contadorIntentos=0;
+
+  numeroIngresado=parseInt(document.getElementById('txtIdNumero').value);
+  
+  //Falta contador de intentos
+  
+  if(numeroIngresado!=numeroSecreto)
+  {
+    contadorIntentos=contadorIntentos+1;
+    if(numeroIngresado==numeroSecreto)
+    {
+      alert("¡Ganaste!");    
+    }
+    else if(numeroIngresado>numeroSecreto)
+    {
+      alert("Te pasate");
+    }
+    else
+    {
+      alert("Te quedaste corto");
+    }
+    alert(contadorIntentos);
+  }
+  /*if(numeroIngresado==numeroSecreto)
+  {
+    alert("¡Ganaste!"+contadorIntentos);
+  }
+  else
+  {
+    if(numeroIngresado>numeroSecreto)
+    {
+      alert("Te pasate");
+    }
+    else
+    {
+      alert("Te quedaste corto");
+    }
+  }*/
 }
