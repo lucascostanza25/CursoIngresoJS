@@ -21,15 +21,21 @@ function verificar()
 {
   let numeroIngresado;
   let contadorIntentos=0;
+  let pregunta="si";
 
   numeroIngresado=parseInt(document.getElementById('txtIdNumero').value);
   
   //Falta contador de intentos
+
   
-  if(numeroIngresado!=numeroSecreto)
+  while(pregunta=='si')
   {
-    contadorIntentos=contadorIntentos+1;
-    if(numeroIngresado==numeroSecreto)
+    contadorIntentos++;
+    if(numeroIngresado!=numeroSecreto)
+    {
+      alert("No!");
+    }
+    else if(numeroIngresado==numeroSecreto)
     {
       alert("¡Ganaste!");    
     }
@@ -40,9 +46,11 @@ function verificar()
     else
     {
       alert("Te quedaste corto");
-    }
+    } 
     alert(contadorIntentos);
+    pregunta=prompt("si / no");
   }
+    
   /*if(numeroIngresado==numeroSecreto)
   {
     alert("¡Ganaste!"+contadorIntentos);

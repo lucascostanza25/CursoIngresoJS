@@ -1,5 +1,9 @@
 function mostrar()
 {
+	let i=10;
 
-	alert("ok");
+	for(i=10;i>=0;i--)
+	{
+		document.write(i+"<br>");
+	}
 }
