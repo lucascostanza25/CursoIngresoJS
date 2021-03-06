@@ -22,6 +22,7 @@ function verificar()
   let numeroIngresado;
   let contadorIntentos=0;
   let pregunta="si";
+  let acumulador;
 
   numeroIngresado=parseInt(document.getElementById('txtIdNumero').value);
   
